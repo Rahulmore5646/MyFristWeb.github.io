@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.applybox{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgb(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+.small{
+    font-size: 20px;
+}
+.formcontainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+input, select, textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+input:focus{
+    outline-color: blue;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+
+}
+button{
+    background-color: aqua;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: #ccc;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    
+}
+.textcontrol{
+    grid-column: 1 /span 2;
+}
+.textcontrol{
+    width: 100px;
+}
+@media (max-width: 460px){
+    .textcontrol{
+        grid-column: 1 /span 2;
+    }
+}
+

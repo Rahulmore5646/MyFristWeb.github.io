@@ -71,11 +71,11 @@ button:hover{
     grid-column: 1 /span 2;
 }
 .textcontrol{
-    width: 100px;
+    width: 100%;
 }
 @media (max-width: 460px){
     .textcontrol{
-        grid-column: 1 /span 2;
+        grid-column: 1 /span 1;
     }
 }
 
